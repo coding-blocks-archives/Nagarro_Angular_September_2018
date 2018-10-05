@@ -16,4 +16,8 @@ export class AppComponent {
   counter() {
     this.count++;
   }
+
+  catchTask(e) {
+    this.tasks[1] = e;
+  }
 }
