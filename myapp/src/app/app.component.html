@@ -1,0 +1,8 @@
+<div class='count'>
+  <button (click)=counter()>Increase Count</button>
+  <span>{{count}}</span>
+  <div *ngFor='let todo of tasks'>
+    <app-todos [tasks]= "todo"></app-todos>
+  </div>
+
+</div>
