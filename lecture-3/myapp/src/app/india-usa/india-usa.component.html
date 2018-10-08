@@ -1,0 +1,11 @@
+<router-outlet></router-outlet>
+<h3>Atlantic</h3>
+<div *ngFor='let i of AtlanticMenu' >
+  <span>{{i.item}}</span>
+  <button (click)="atlanticMenu(i.id)">Book</button>
+</div>
+<h3>Pacific</h3>
+<div *ngFor='let i of PacificMenu' >
+    <span>{{i.item}}</span>
+    <button (click)="pacificMenu(i.id)">Book</button>
+  </div>

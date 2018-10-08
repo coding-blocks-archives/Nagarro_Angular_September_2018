@@ -4,5 +4,8 @@
   <div *ngFor='let todo of tasks'>
     <app-todos [tasks]= "todo" (modifyTask)='catchTask($event)'></app-todos>
   </div>
-
+  <div>
+      <span [style.color]='name'>{{name}}</span>
+  </div>
+  <input [(ngModel)]='name'>
 </div>

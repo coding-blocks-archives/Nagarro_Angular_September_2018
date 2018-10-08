@@ -8,9 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   count: number;
   tasks: Array<string>;
+  name: string;
   constructor() {
     this.count = 0;
     this.tasks = ['Portfolio', 'Homework', 'Classwork', 'PubJ'];
+    this.name = 'Aayush';
   }
 
   counter() {
